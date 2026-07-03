@@ -255,7 +255,7 @@ function renderHero(bio) {
         ${externalLink("Demo Reel", links.demoReel, "btn btn-primary")}
         ${externalLink("GitHub", links.github, "btn")}
         ${externalLink("YouTube", links.youtube, "btn")}
-        ${externalLink("Instagram", links.instagram, "btn")}
+        ${externalLink("LinkedIn", "https://www.linkedin.com/in/cole-stevenson-47755b158/", "btn")}
       </div>
     </div>
     <div class="hero-image reveal">
