@@ -25,6 +25,7 @@ PROJECTS_DIR = ROOT / "projects"
 DOCS_DIR = ROOT / "docs"
 DATA_DIR = DOCS_DIR / "data"
 ASSET_OUT_DIR = DOCS_DIR / "project-assets"
+NOJEKYLL_FILE = DOCS_DIR / ".nojekyll"
 
 PROJECT_TYPES = {"film", "art", "coding"}
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp", ".tif", ".tiff"}
@@ -180,6 +181,8 @@ def build_data() -> dict:
 
     with (DATA_DIR / "projects.json").open("w", encoding="utf-8") as handle:
         json.dump(payload, handle, indent=2)
+
+    NOJEKYLL_FILE.touch()
 
     return payload
 
