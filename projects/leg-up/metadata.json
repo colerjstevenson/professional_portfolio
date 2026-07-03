@@ -1,0 +1,18 @@
+{
+  "title": "Leg Up",
+  "description": "A short animation test about a robot who has lost his legs. Made in blender to practice lighting, shading, and animation",
+  "type": "film",
+  "tags": [
+    "short film",
+    "blender"
+  ],
+  "youtube": "https://www.youtube.com/watch?v=JwPitvxnp_o",
+  "git": "",
+  "thumbnail": "thumb.jpg",
+  "poster": "poster.PNG",
+  "media": [
+    "main.mp4"
+  ],
+  "preview_webp": "legUp_final_preview.webp",
+  "featured": false
+}

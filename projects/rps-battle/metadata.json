@@ -1,0 +1,17 @@
+{
+  "title": "RPS Battle",
+  "description": "A small web game where the goal is to stay alive as long a possible!",
+  "type": "coding",
+  "tags": [
+    "game",
+    "website",
+    "javascript"
+  ],
+  "youtube": "",
+  "git": "https://colerjstevenson.github.io/RPS_battle/",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [],
+  "preview_webp": null,
+  "featured": true
+}

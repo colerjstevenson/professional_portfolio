@@ -1,0 +1,24 @@
+{
+  "title": "Stain Glass Maps",
+  "description": "A generative city street maps that I made in Processing and then used blender scripts to cut up and render in blender",
+  "type": "art",
+  "tags": [
+    "generative",
+    "blender",
+    "art"
+  ],
+  "youtube": "",
+  "git": "",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [
+    "main.001.png",
+    "main.002.png",
+    "main.003.png",
+    "main.004.png",
+    "main.005.png",
+    "main.006.png"
+  ],
+  "preview_webp": null,
+  "featured": false
+}

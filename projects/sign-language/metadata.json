@@ -1,0 +1,16 @@
+{
+  "title": "Sign Language",
+  "description": "A CG short about about two bathroom signs seperated by the chasm between them.This was the very first animated short I made to teach myself blender.",
+  "type": "film",
+  "tags": [
+    "blender",
+    "short film"
+  ],
+  "youtube": "https://www.youtube.com/watch?v=hLc06zm4P-k",
+  "git": "",
+  "thumbnail": "thumb.jpg",
+  "poster": "poster.PNG",
+  "media": [],
+  "preview_webp": null,
+  "featured": false
+}

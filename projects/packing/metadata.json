@@ -1,0 +1,22 @@
+{
+  "title": "Packing",
+  "description": "A generative are pience made in Processing using packing algoritms",
+  "type": "art",
+  "tags": [
+    "generative",
+    "Processing",
+    "art"
+  ],
+  "youtube": "",
+  "git": "",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [
+    "main.001.mp4",
+    "main.002.mp4",
+    "main.003.mp4",
+    "main.004.mp4"
+  ],
+  "preview_webp": "0001-0597_preview.webp",
+  "featured": false
+}

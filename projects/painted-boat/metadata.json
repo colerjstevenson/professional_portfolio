@@ -1,0 +1,19 @@
+{
+  "title": "Painted Boat",
+  "description": "A Blender animation of a boat on the water, made as a test for a oil painting style",
+  "type": "art",
+  "tags": [
+    "painting",
+    "blender",
+    "water"
+  ],
+  "youtube": "",
+  "git": "",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [
+    "main.mp4"
+  ],
+  "preview_webp": "boat_oilpaint_preview.webp",
+  "featured": true
+}

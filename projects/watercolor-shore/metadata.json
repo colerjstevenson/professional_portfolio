@@ -1,0 +1,20 @@
+{
+  "title": "Watercolor Shore",
+  "description": "An animated test shot for a piece trying to mimic a painted water color effect",
+  "type": "art",
+  "tags": [
+    "art",
+    "painted",
+    "watercolor",
+    "wip"
+  ],
+  "youtube": "https://www.youtube.com/watch?v=N9gF2095f_o",
+  "git": "",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [
+    "main.mp4"
+  ],
+  "preview_webp": "father_watercolor_preview.webp",
+  "featured": true
+}

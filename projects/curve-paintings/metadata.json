@@ -1,0 +1,21 @@
+{
+  "title": "Curve Paintings",
+  "description": "Generative animation created using curves with colors mapped onto an image to create a painting effect",
+  "type": "art",
+  "tags": [
+    "art",
+    "painting",
+    "generative"
+  ],
+  "youtube": "",
+  "git": "",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [
+    "main.001.mp4",
+    "main.002.mp4",
+    "main.003.mp4"
+  ],
+  "preview_webp": "final10001-0800_preview.webp",
+  "featured": false
+}

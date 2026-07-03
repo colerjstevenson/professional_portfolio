@@ -1,0 +1,19 @@
+{
+  "title": "Old Man stop motion",
+  "description": "A test shot for a piece with a old man that combines a 2D and 3D character at 2 different frame rates",
+  "type": "art",
+  "tags": [
+    "stop motoion",
+    "blender",
+    "2d/3d"
+  ],
+  "youtube": "",
+  "git": "",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [
+    "main.mp4"
+  ],
+  "preview_webp": "old_man_preview.webp",
+  "featured": true
+}

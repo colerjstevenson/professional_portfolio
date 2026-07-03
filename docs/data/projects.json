@@ -5,7 +5,7 @@
     "name": "Cole Stevenson",
     "bio": "Cole Stevenson is a technical artist and software developer with a background in computer science and feature film animation. His work focuses on pipeline development, automation, and interactive software, creating tools and systems that improve production workflows and enable creative teams to work more efficiently.",
     "headshot": "project-assets/bio/headshot.JPG",
-    "resume": "https://drive.google.com/file/d/1m3JDQtye6Ywo6DZcO79swlPccJjVbY_W/view?usp=sharing",
+    "resume": "project-assets/bio/resume.docx",
     "links": {
       "github": "https://github.com/colerjstevenson",
       "youtube": "https://www.youtube.com/@circle8animations115",
@@ -26,7 +26,7 @@
         "art",
         "blender"
       ],
-      "featured": true,
+      "featured": false,
       "links": {
         "youtube": "",
         "youtubeEmbed": "",
@@ -97,6 +97,34 @@
         "poster": "",
         "preview": "",
         "media": []
+      }
+    },
+    {
+      "slug": "curve-paintings",
+      "type": "art",
+      "title": "Curve Paintings",
+      "description": "Generative animation created using curves with colors mapped onto an image to create a painting effect",
+      "tags": [
+        "art",
+        "painting",
+        "generative"
+      ],
+      "featured": false,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/curve-paintings",
+        "thumbnail": "project-assets/curve-paintings/assets/thumb.png",
+        "poster": "",
+        "preview": "project-assets/curve-paintings/assets/final10001-0800_preview.webp",
+        "media": [
+          "project-assets/curve-paintings/assets/main.001.mp4",
+          "project-assets/curve-paintings/assets/main.002.mp4",
+          "project-assets/curve-paintings/assets/main.003.mp4"
+        ]
       }
     },
     {
@@ -204,6 +232,26 @@
       }
     },
     {
+      "slug": "horse-breeding-simulator",
+      "type": "coding",
+      "title": "Horse Breeding Simulator",
+      "description": "A tycoon game where you take control of a horse breeding frame!",
+      "tags": [],
+      "featured": true,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": "https://colerjstevenson.github.io/horsebreedingsimulator/"
+      },
+      "assets": {
+        "base": "project-assets/horse-breeding-simulator",
+        "thumbnail": "project-assets/horse-breeding-simulator/assets/thumb.png",
+        "poster": "",
+        "preview": "",
+        "media": []
+      }
+    },
+    {
       "slug": "horse-cutout",
       "type": "art",
       "title": "Horse Cutout",
@@ -228,6 +276,56 @@
         "media": [
           "project-assets/horse-cutout/assets/main.mp4"
         ]
+      }
+    },
+    {
+      "slug": "leg-up",
+      "type": "film",
+      "title": "Leg Up",
+      "description": "A short animation test about a robot who has lost his legs. Made in blender to practice lighting, shading, and animation",
+      "tags": [
+        "short film",
+        "blender"
+      ],
+      "featured": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=JwPitvxnp_o",
+        "youtubeEmbed": "https://www.youtube.com/embed/JwPitvxnp_o",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/leg-up",
+        "thumbnail": "project-assets/leg-up/assets/thumb.jpg",
+        "poster": "project-assets/leg-up/assets/poster.PNG",
+        "preview": "project-assets/leg-up/assets/legUp_final_preview.webp",
+        "media": [
+          "project-assets/leg-up/assets/main.mp4"
+        ]
+      }
+    },
+    {
+      "slug": "light-the-way-test-trailer",
+      "type": "film",
+      "title": "Light the Way (Test Trailer)",
+      "description": "A test trailer for a film meant to mimic an oil painting style about a mother journey ",
+      "tags": [
+        "short film",
+        "wip",
+        "painted",
+        "blender"
+      ],
+      "featured": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=c5JLz5XzuV4",
+        "youtubeEmbed": "https://www.youtube.com/embed/c5JLz5XzuV4",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/light-the-way-test-trailer",
+        "thumbnail": "",
+        "poster": "project-assets/light-the-way-test-trailer/assets/poster.PNG",
+        "preview": "",
+        "media": []
       }
     },
     {
@@ -282,6 +380,165 @@
       }
     },
     {
+      "slug": "old-man-stop-motion",
+      "type": "art",
+      "title": "Old Man stop motion",
+      "description": "A test shot for a piece with a old man that combines a 2D and 3D character at 2 different frame rates",
+      "tags": [
+        "stop motoion",
+        "blender",
+        "2d/3d"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/old-man-stop-motion",
+        "thumbnail": "project-assets/old-man-stop-motion/assets/thumb.png",
+        "poster": "",
+        "preview": "project-assets/old-man-stop-motion/assets/old_man_preview.webp",
+        "media": [
+          "project-assets/old-man-stop-motion/assets/main.mp4"
+        ]
+      }
+    },
+    {
+      "slug": "packing",
+      "type": "art",
+      "title": "Packing",
+      "description": "A generative are pience made in Processing using packing algoritms",
+      "tags": [
+        "generative",
+        "Processing",
+        "art"
+      ],
+      "featured": false,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/packing",
+        "thumbnail": "project-assets/packing/assets/thumb.png",
+        "poster": "",
+        "preview": "project-assets/packing/assets/0001-0597_preview.webp",
+        "media": [
+          "project-assets/packing/assets/main.001.mp4",
+          "project-assets/packing/assets/main.002.mp4",
+          "project-assets/packing/assets/main.003.mp4",
+          "project-assets/packing/assets/main.004.mp4"
+        ]
+      }
+    },
+    {
+      "slug": "painted-boat",
+      "type": "art",
+      "title": "Painted Boat",
+      "description": "A Blender animation of a boat on the water, made as a test for a oil painting style",
+      "tags": [
+        "painting",
+        "blender",
+        "water"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/painted-boat",
+        "thumbnail": "project-assets/painted-boat/assets/thumb.png",
+        "poster": "",
+        "preview": "project-assets/painted-boat/assets/boat_oilpaint_preview.webp",
+        "media": [
+          "project-assets/painted-boat/assets/main.mp4"
+        ]
+      }
+    },
+    {
+      "slug": "rps-battle",
+      "type": "coding",
+      "title": "RPS Battle",
+      "description": "A small web game where the goal is to stay alive as long a possible!",
+      "tags": [
+        "game",
+        "website",
+        "javascript"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": "https://colerjstevenson.github.io/RPS_battle/"
+      },
+      "assets": {
+        "base": "project-assets/rps-battle",
+        "thumbnail": "project-assets/rps-battle/assets/thumb.png",
+        "poster": "",
+        "preview": "",
+        "media": []
+      }
+    },
+    {
+      "slug": "sign-language",
+      "type": "film",
+      "title": "Sign Language",
+      "description": "A CG short about about two bathroom signs seperated by the chasm between them.This was the very first animated short I made to teach myself blender.",
+      "tags": [
+        "blender",
+        "short film"
+      ],
+      "featured": false,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=hLc06zm4P-k",
+        "youtubeEmbed": "https://www.youtube.com/embed/hLc06zm4P-k",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/sign-language",
+        "thumbnail": "project-assets/sign-language/assets/thumb.jpg",
+        "poster": "project-assets/sign-language/assets/poster.PNG",
+        "preview": "",
+        "media": []
+      }
+    },
+    {
+      "slug": "stain-glass-maps",
+      "type": "art",
+      "title": "Stain Glass Maps",
+      "description": "A generative city street maps that I made in Processing and then used blender scripts to cut up and render in blender",
+      "tags": [
+        "generative",
+        "blender",
+        "art"
+      ],
+      "featured": false,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/stain-glass-maps",
+        "thumbnail": "project-assets/stain-glass-maps/assets/thumb.png",
+        "poster": "",
+        "preview": "",
+        "media": [
+          "project-assets/stain-glass-maps/assets/main.001.png",
+          "project-assets/stain-glass-maps/assets/main.002.png",
+          "project-assets/stain-glass-maps/assets/main.003.png",
+          "project-assets/stain-glass-maps/assets/main.004.png",
+          "project-assets/stain-glass-maps/assets/main.005.png",
+          "project-assets/stain-glass-maps/assets/main.006.png"
+        ]
+      }
+    },
+    {
       "slug": "watercolor-bear",
       "type": "art",
       "title": "Watercolor Bear",
@@ -305,6 +562,56 @@
         "media": [
           "project-assets/watercolor-bear/assets/main.mp4"
         ]
+      }
+    },
+    {
+      "slug": "watercolor-shore",
+      "type": "art",
+      "title": "Watercolor Shore",
+      "description": "An animated test shot for a piece trying to mimic a painted water color effect",
+      "tags": [
+        "art",
+        "painted",
+        "watercolor",
+        "wip"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=N9gF2095f_o",
+        "youtubeEmbed": "https://www.youtube.com/embed/N9gF2095f_o",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/watercolor-shore",
+        "thumbnail": "project-assets/watercolor-shore/assets/thumb.png",
+        "poster": "",
+        "preview": "project-assets/watercolor-shore/assets/father_watercolor_preview.webp",
+        "media": [
+          "project-assets/watercolor-shore/assets/main.mp4"
+        ]
+      }
+    },
+    {
+      "slug": "word-grid",
+      "type": "coding",
+      "title": "Word Grid",
+      "description": "a simple web based word game!",
+      "tags": [
+        "game",
+        "website"
+      ],
+      "featured": false,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": "https://colerjstevenson.github.io/word_grid/"
+      },
+      "assets": {
+        "base": "project-assets/word-grid",
+        "thumbnail": "project-assets/word-grid/assets/thumb.jpg",
+        "poster": "",
+        "preview": "",
+        "media": []
       }
     }
   ]
