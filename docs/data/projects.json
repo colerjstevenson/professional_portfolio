@@ -235,7 +235,7 @@
       "slug": "horse-breeding-simulator",
       "type": "coding",
       "title": "Horse Breeding Simulator",
-      "description": "A tycoon game where you take control of a horse breeding frame!",
+      "description": "A tycoon game where you take control of a horse breeding farm!",
       "tags": [],
       "featured": true,
       "links": {
@@ -332,7 +332,7 @@
       "slug": "melted-hearts",
       "type": "film",
       "title": "Melted Hearts",
-      "description": "Melted Hearts is a computer-animated film about a snowman's journey to \"make\" a friend.It received official selections from 8 film festivals and won the Peers Choice Award at the Edmonton Short Film Festival.",
+      "description": "Melted Hearts is a computer-animated film about a snowman's journey to \"make\" a friend. It received official selections from 8 film festivals and won the Peers Choice Award at the Edmonton Short Film Festival.",
       "tags": [
         "Stop motion",
         "Short film",
@@ -347,8 +347,8 @@
       },
       "assets": {
         "base": "project-assets/melted-hearts",
-        "thumbnail": "project-assets/melted-hearts/assets/still 1.png",
-        "poster": "project-assets/melted-hearts/assets/poster 5 awards.png",
+        "thumbnail": "project-assets/melted-hearts/assets/thumb.png",
+        "poster": "project-assets/melted-hearts/assets/poster.png",
         "preview": "",
         "media": []
       }

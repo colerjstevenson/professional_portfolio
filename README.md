@@ -1,25 +1,19 @@
-# Portfolio Project Generator
+# Portfolio Project Manager
 
-This repository contains a **Python UI tool** that helps you create project entries for your portfolio website.
+This repository contains a **Python UI tool** that helps you manage the project entries for your portfolio website.
 
 ## What it does
-- Collects project metadata (title, description, tags, links, etc.) via a DearPyGui interface.
-- Copies selected media assets (thumbnail, poster, videos/images) into a project‑specific `assets/` folder.
-- Renames assets using a consistent naming scheme:
-  - Thumbnail → `thumb.<ext>`
-  - Poster → `poster.<ext>`
-  - Main media → `main.<ext>` (single) or `main.001.<ext>`, `main.002.<ext>` … (multiple)
-- Generates a short animated WebP preview from the first video file.
+- Shows every project currently in `projects/` and lets you edit or delete it.
+- Creates new projects with the same metadata fields you already use.
+- Lets you change thumbnails, posters, media, previews, and bio assets.
+- Publishes all edits by rebuilding `docs/data/projects.json` and `docs/project-assets/`.
 
 
 ## Usage
 ```bash
 python generate_project_ui.py
 ```
-Run the script, fill out the form, and select your media files. After submission a new folder under `projects/` will be created with:
-- `metadata.json`
-- Copied assets following the naming rules above
-- Optional WebP preview
+Run the script, select a project from the list, or create a new one. After editing, click **Save Project**. When you're ready, click **Publish** to apply the changes to the generated site files.
 
 ## Portfolio Website
 
@@ -53,9 +47,6 @@ Then open:
 
 The generated site includes a committed `.nojekyll` file so GitHub Pages serves the `docs/` output as plain static files instead of running it through Jekyll.
 
-Whenever you add or edit projects, run:
-```bash
-python build_portfolio_site.py
-```
+Whenever you add or edit projects, you can either click **Publish** in the UI or run `python build_portfolio_site.py`.
 Commit the updated `docs/data/projects.json` and `docs/project-assets/` output.
 
