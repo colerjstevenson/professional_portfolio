@@ -56,6 +56,12 @@ function videoOnErrorHandler(path) {
   return `this.outerHTML=decodeURIComponent('${encoded}')`;
 }
 
+function setVideoWrapAspectRatio(video) {
+  const wrap = video?.closest?.(".video-wrap");
+  if (!wrap || !video?.videoWidth || !video?.videoHeight) return;
+  wrap.style.setProperty("--video-aspect-ratio", `${video.videoWidth} / ${video.videoHeight}`);
+}
+
 function youtubeEmbedMarkup(project, title) {
   const embedUrl = project?.links?.youtubeEmbed || "";
   const youtubeUrl = project?.links?.youtube || "";
@@ -84,7 +90,7 @@ function projectPrimaryMediaMarkup(project, title) {
     const href = escapeAttr(localVideo);
     return {
       primaryMarkup: `
-        <div class="video-wrap"><video controls playsinline preload="metadata" src="${href}" onerror="${videoOnErrorHandler(localVideo)}"></video></div>
+        <div class="video-wrap"><video controls playsinline preload="metadata" src="${href}" onloadedmetadata="setVideoWrapAspectRatio(this)" onerror="${videoOnErrorHandler(localVideo)}"></video></div>
         ${youtubeUrl ? `<div class="project-media-actions">${externalLink("Watch on YouTube", youtubeUrl, "btn")}</div>` : ""}
       `,
       usedLocalVideo: localVideo,
@@ -284,7 +290,7 @@ function renderProjectPage(data) {
     .map((path) => {
     if (isVideo(path)) {
       const href = escapeAttr(path);
-      return `<video controls playsinline preload="metadata" src="${href}" onerror="${videoOnErrorHandler(path)}"></video>`;
+      return `<video controls playsinline preload="metadata" src="${href}" onloadedmetadata="setVideoWrapAspectRatio(this)" onerror="${videoOnErrorHandler(path)}"></video>`;
     }
     return `<img src="${escapeAttr(path)}" alt="${escapeAttr(safeText(project.title))} media" loading="lazy" />`;
   });
