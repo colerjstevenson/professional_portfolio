@@ -51,10 +51,11 @@ Then open:
 4. Select your branch and `/docs` folder.
 5. Save.
 
+The generated site includes a committed `.nojekyll` file so GitHub Pages serves the `docs/` output as plain static files instead of running it through Jekyll.
+
 Whenever you add or edit projects, run:
 ```bash
 python build_portfolio_site.py
 ```
 Commit the updated `docs/data/projects.json` and `docs/project-assets/` output.
-
 
