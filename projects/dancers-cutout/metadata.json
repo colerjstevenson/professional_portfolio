@@ -1,0 +1,19 @@
+{
+  "title": "Dancers Cutout",
+  "description": "A cutout out stop motions animation of an old Nicholas Brothers dance routine",
+  "type": "art",
+  "tags": [
+    "cutout",
+    "paper",
+    "dancers"
+  ],
+  "youtube": "https://www.youtube.com/shorts/OTQk_sVFppo",
+  "git": "",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [
+    "main.mp4"
+  ],
+  "preview_webp": "Cut Out Dance Animation_preview.webp",
+  "featured": true
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Birds on a Wire",
+  "description": "A art project of birds on a phone line, made in blender to test paper cutout workflows",
+  "type": "art",
+  "tags": [
+    "paper",
+    "cutout",
+    "stop motion",
+    "art",
+    "blender"
+  ],
+  "youtube": "",
+  "git": "",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [
+    "main.mp4"
+  ],
+  "preview_webp": "main_media_preview.webp",
+  "featured": true
+}

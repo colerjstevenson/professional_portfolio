@@ -1,0 +1,311 @@
+{
+  "bio": {
+    "slug": "bio",
+    "type": "bio",
+    "name": "Cole Stevenson",
+    "bio": "Cole Stevenson is a technical artist and software developer with a background in computer science and feature film animation. His work focuses on pipeline development, automation, and interactive software, creating tools and systems that improve production workflows and enable creative teams to work more efficiently.",
+    "headshot": "project-assets/bio/headshot.JPG",
+    "resume": "project-assets/bio/resume.docx",
+    "links": {
+      "github": "https://github.com/colerjstevenson",
+      "youtube": "https://www.youtube.com/@circle8animations115",
+      "instagram": "instagram.com/circle8animaions",
+      "demoReel": "https://youtu.be/HiE5JAZxh7k"
+    }
+  },
+  "projects": [
+    {
+      "slug": "birds-on-a-wire",
+      "type": "art",
+      "title": "Birds on a Wire",
+      "description": "A art project of birds on a phone line, made in blender to test paper cutout workflows",
+      "tags": [
+        "paper",
+        "cutout",
+        "stop motion",
+        "art",
+        "blender"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/birds-on-a-wire",
+        "thumbnail": "project-assets/birds-on-a-wire/assets/thumb.png",
+        "poster": "",
+        "preview": "project-assets/birds-on-a-wire/assets/main_media_preview.webp",
+        "media": [
+          "project-assets/birds-on-a-wire/assets/main.mp4"
+        ]
+      }
+    },
+    {
+      "slug": "confetti-collage",
+      "type": "art",
+      "title": "Confetti Collage",
+      "description": "a series of art peices made using processing and python in blender that use generated confetti to create images",
+      "tags": [
+        "art",
+        "blender",
+        "collage",
+        "paper"
+      ],
+      "featured": false,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/confetti-collage",
+        "thumbnail": "project-assets/confetti-collage/assets/thumb.png",
+        "poster": "",
+        "preview": "",
+        "media": [
+          "project-assets/confetti-collage/assets/main.001.png",
+          "project-assets/confetti-collage/assets/main.002.png",
+          "project-assets/confetti-collage/assets/main.003.png",
+          "project-assets/confetti-collage/assets/main.004.png",
+          "project-assets/confetti-collage/assets/main.005.png",
+          "project-assets/confetti-collage/assets/main.006.png"
+        ]
+      }
+    },
+    {
+      "slug": "curling-champs",
+      "type": "coding",
+      "title": "Curling Champs",
+      "description": "A WIP phone game where you mix curling stones together like a horse breeder to get the best team of stones and be the best curler alive! made with godot",
+      "tags": [
+        "game",
+        "coding",
+        "godot",
+        "git"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": "https://colerjstevenson.github.io/CurlingChamp/"
+      },
+      "assets": {
+        "base": "project-assets/curling-champs",
+        "thumbnail": "project-assets/curling-champs/assets/thumb.png",
+        "poster": "",
+        "preview": "",
+        "media": []
+      }
+    },
+    {
+      "slug": "dancers-cutout",
+      "type": "art",
+      "title": "Dancers Cutout",
+      "description": "A cutout out stop motions animation of an old Nicholas Brothers dance routine",
+      "tags": [
+        "cutout",
+        "paper",
+        "dancers"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "https://www.youtube.com/shorts/OTQk_sVFppo",
+        "youtubeEmbed": "https://www.youtube.com/embed/OTQk_sVFppo",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/dancers-cutout",
+        "thumbnail": "project-assets/dancers-cutout/assets/thumb.png",
+        "poster": "",
+        "preview": "project-assets/dancers-cutout/assets/Cut Out Dance Animation_preview.webp",
+        "media": [
+          "project-assets/dancers-cutout/assets/main.mp4"
+        ]
+      }
+    },
+    {
+      "slug": "degrees-of-me",
+      "type": "coding",
+      "title": "Degrees of Me",
+      "description": "A web app for the game six degree of kevin bacon, but for connecting actors to my own personal film credits",
+      "tags": [
+        "coding",
+        "website",
+        "git"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": "https://colerjstevenson.github.io/DegreesOfMe/"
+      },
+      "assets": {
+        "base": "project-assets/degrees-of-me",
+        "thumbnail": "project-assets/degrees-of-me/assets/thumb.png",
+        "poster": "",
+        "preview": "",
+        "media": []
+      }
+    },
+    {
+      "slug": "early-birds",
+      "type": "film",
+      "title": "Early Birds",
+      "description": "Early Birds is a computer-animated short about a penguin who just wants a friend to play with.  It has currently received official selections from 22 film festivals including winning best humor film at the Paella International Film Festival and best animated film at the Emerging Artist Film Festival.",
+      "tags": [
+        "Stop motion",
+        "short film",
+        "clay",
+        "blender"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=xlhBf6WsZUc",
+        "youtubeEmbed": "https://www.youtube.com/embed/xlhBf6WsZUc",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/early-birds",
+        "thumbnail": "project-assets/early-birds/assets/thumbnail - 5 awards.png",
+        "poster": "project-assets/early-birds/assets/poster.jpg",
+        "preview": "",
+        "media": []
+      }
+    },
+    {
+      "slug": "ghosts",
+      "type": "art",
+      "title": "Ghosts!",
+      "description": "A series of ghost animations made in blender to test out a pixel art stlye",
+      "tags": [
+        "pixel art",
+        "art",
+        "ghosts",
+        "blender"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/ghosts",
+        "thumbnail": "project-assets/ghosts/assets/thumb.png",
+        "poster": "",
+        "preview": "project-assets/ghosts/assets/Ghost Animation 1_preview.webp",
+        "media": [
+          "project-assets/ghosts/assets/main.001.mp4",
+          "project-assets/ghosts/assets/main.002.mp4",
+          "project-assets/ghosts/assets/main.003.mp4"
+        ]
+      }
+    },
+    {
+      "slug": "horse-cutout",
+      "type": "art",
+      "title": "Horse Cutout",
+      "description": "A 3D render on a paper cutout horse walk cycle, made in blender to test stop motion style.",
+      "tags": [
+        "paper",
+        "cutout",
+        "stop motion",
+        "blender"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "https://www.youtube.com/shorts/JmrUlnvviV0",
+        "youtubeEmbed": "https://www.youtube.com/embed/JmrUlnvviV0",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/horse-cutout",
+        "thumbnail": "project-assets/horse-cutout/assets/thumb.PNG",
+        "poster": "",
+        "preview": "project-assets/horse-cutout/assets/Horse_Cut_Out_Animation_preview.webp",
+        "media": [
+          "project-assets/horse-cutout/assets/main.mp4"
+        ]
+      }
+    },
+    {
+      "slug": "melted-hearts",
+      "type": "film",
+      "title": "Melted Hearts",
+      "description": "Melted Hearts is a computer-animated film about a snowman's journey to \"make\" a friend.It received official selections from 8 film festivals and won the Peers Choice Award at the Edmonton Short Film Festival.",
+      "tags": [
+        "Stop motion",
+        "Short film",
+        "clay",
+        "blender"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=T-aBCQ-OWm0&t=28s",
+        "youtubeEmbed": "https://www.youtube.com/embed/T-aBCQ-OWm0",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/melted-hearts",
+        "thumbnail": "project-assets/melted-hearts/assets/still 1.png",
+        "poster": "project-assets/melted-hearts/assets/poster 5 awards.png",
+        "preview": "",
+        "media": []
+      }
+    },
+    {
+      "slug": "night-drive",
+      "type": "art",
+      "title": "Night Drive",
+      "description": "A 2D pixel art scene used as a test for the pixel art style with motion and lighting",
+      "tags": [
+        "pixel art",
+        "art",
+        "blender"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "https://www.youtube.com/watch?v=TD5_SnttiRM",
+        "youtubeEmbed": "https://www.youtube.com/embed/TD5_SnttiRM",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/night-drive",
+        "thumbnail": "project-assets/night-drive/assets/thumb.png",
+        "poster": "",
+        "preview": "project-assets/night-drive/assets/nightDrive_pixelart_h264_preview.webp",
+        "media": [
+          "project-assets/night-drive/assets/main.mp4"
+        ]
+      }
+    },
+    {
+      "slug": "watercolor-bear",
+      "type": "art",
+      "title": "Watercolor Bear",
+      "description": "A motion test of a rig for a watercolor style bear character",
+      "tags": [
+        "watercolor",
+        "blender",
+        "test"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "https://www.youtube.com/shorts/uO174Ka84vc",
+        "youtubeEmbed": "https://www.youtube.com/embed/uO174Ka84vc",
+        "git": ""
+      },
+      "assets": {
+        "base": "project-assets/watercolor-bear",
+        "thumbnail": "project-assets/watercolor-bear/assets/thumb.PNG",
+        "poster": "",
+        "preview": "project-assets/watercolor-bear/assets/bear_watercolor_preview.webp",
+        "media": [
+          "project-assets/watercolor-bear/assets/main.mp4"
+        ]
+      }
+    }
+  ]
+}

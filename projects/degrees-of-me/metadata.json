@@ -1,0 +1,17 @@
+{
+  "title": "Degrees of Me",
+  "description": "A web app for the game six degree of kevin bacon, but for connecting actors to my own personal film credits",
+  "type": "coding",
+  "tags": [
+    "coding",
+    "website",
+    "git"
+  ],
+  "youtube": "",
+  "git": "https://colerjstevenson.github.io/DegreesOfMe/",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [],
+  "preview_webp": null,
+  "featured": true
+}

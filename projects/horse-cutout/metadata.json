@@ -1,0 +1,20 @@
+{
+  "title": "Horse Cutout",
+  "description": "A 3D render on a paper cutout horse walk cycle, made in blender to test stop motion style.",
+  "type": "art",
+  "tags": [
+    "paper",
+    "cutout",
+    "stop motion",
+    "blender"
+  ],
+  "youtube": "https://www.youtube.com/shorts/JmrUlnvviV0",
+  "git": "",
+  "thumbnail": "thumb.PNG",
+  "poster": null,
+  "media": [
+    "main.mp4"
+  ],
+  "preview_webp": "Horse_Cut_Out_Animation_preview.webp",
+  "featured": true
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Ghosts!",
+  "description": "A series of ghost animations made in blender to test out a pixel art stlye",
+  "type": "art",
+  "tags": [
+    "pixel art",
+    "art",
+    "ghosts",
+    "blender"
+  ],
+  "youtube": "",
+  "git": "",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [
+    "main.001.mp4",
+    "main.002.mp4",
+    "main.003.mp4"
+  ],
+  "preview_webp": "Ghost Animation 1_preview.webp",
+  "featured": true
+}

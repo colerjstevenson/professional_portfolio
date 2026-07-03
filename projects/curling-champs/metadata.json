@@ -1,0 +1,18 @@
+{
+  "title": "Curling Champs",
+  "description": "A WIP phone game where you mix curling stones together like a horse breeder to get the best team of stones and be the best curler alive! made with godot",
+  "type": "coding",
+  "tags": [
+    "game",
+    "coding",
+    "godot",
+    "git"
+  ],
+  "youtube": "",
+  "git": "https://colerjstevenson.github.io/CurlingChamp/",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [],
+  "preview_webp": null,
+  "featured": true
+}

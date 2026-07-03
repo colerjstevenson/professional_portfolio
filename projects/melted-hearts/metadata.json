@@ -1,0 +1,18 @@
+{
+  "title": "Melted Hearts",
+  "description": "Melted Hearts is a computer-animated film about a snowman's journey to \"make\" a friend.It received official selections from 8 film festivals and won the Peers Choice Award at the Edmonton Short Film Festival.",
+  "type": "film",
+  "tags": [
+    "Stop motion",
+    "Short film",
+    "clay",
+    "blender"
+  ],
+  "youtube": "https://www.youtube.com/watch?v=T-aBCQ-OWm0&t=28s",
+  "git": "",
+  "thumbnail": "still 1.png",
+  "poster": "poster 5 awards.png",
+  "media": [],
+  "preview_webp": null,
+  "featured": true
+}

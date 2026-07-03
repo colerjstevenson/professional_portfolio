@@ -1,0 +1,19 @@
+{
+  "title": "Night Drive",
+  "description": "A 2D pixel art scene used as a test for the pixel art style with motion and lighting",
+  "type": "art",
+  "tags": [
+    "pixel art",
+    "art",
+    "blender"
+  ],
+  "youtube": "https://www.youtube.com/watch?v=TD5_SnttiRM",
+  "git": "",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [
+    "main.mp4"
+  ],
+  "preview_webp": "nightDrive_pixelart_h264_preview.webp",
+  "featured": true
+}

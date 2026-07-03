@@ -1,0 +1,19 @@
+{
+  "title": "Watercolor Bear",
+  "description": "A motion test of a rig for a watercolor style bear character",
+  "type": "art",
+  "tags": [
+    "watercolor",
+    "blender",
+    "test"
+  ],
+  "youtube": "https://www.youtube.com/shorts/uO174Ka84vc",
+  "git": "",
+  "thumbnail": "thumb.PNG",
+  "poster": null,
+  "media": [
+    "main.mp4"
+  ],
+  "preview_webp": "bear_watercolor_preview.webp",
+  "featured": true
+}

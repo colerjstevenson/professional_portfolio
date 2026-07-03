@@ -1,0 +1,18 @@
+{
+  "title": "Early Birds",
+  "description": "Early Birds is a computer-animated short about a penguin who just wants a friend to play with.  It has currently received official selections from 22 film festivals including winning best humor film at the Paella International Film Festival and best animated film at the Emerging Artist Film Festival.",
+  "type": "film",
+  "tags": [
+    "Stop motion",
+    "short film",
+    "clay",
+    "blender"
+  ],
+  "youtube": "https://www.youtube.com/watch?v=xlhBf6WsZUc",
+  "git": "",
+  "thumbnail": "thumbnail - 5 awards.png",
+  "poster": "poster.jpg",
+  "media": [],
+  "preview_webp": null,
+  "featured": true
+}
