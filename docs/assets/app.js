@@ -86,7 +86,22 @@ function videoOnErrorHandler(path) {
 function setVideoWrapAspectRatio(video) {
   const wrap = video?.closest?.(".video-wrap");
   if (!wrap || !video?.videoWidth || !video?.videoHeight) return;
-  wrap.style.setProperty("--video-aspect-ratio", `${video.videoWidth} / ${video.videoHeight}`);
+  const ratio = `${video.videoWidth} / ${video.videoHeight}`;
+  wrap.style.setProperty("--video-aspect-ratio", ratio);
+
+  // Keep all project-page videos visually consistent by sharing one ratio.
+  const projectDetail = wrap.closest(".project-detail");
+  if (!projectDetail) return;
+
+  const sharedRatio = projectDetail.style.getPropertyValue("--project-video-aspect-ratio").trim();
+  if (!sharedRatio) {
+    projectDetail.style.setProperty("--project-video-aspect-ratio", ratio);
+  }
+
+  const ratioToUse = projectDetail.style.getPropertyValue("--project-video-aspect-ratio").trim() || ratio;
+  projectDetail.querySelectorAll(".video-wrap").forEach((videoWrap) => {
+    videoWrap.style.setProperty("--video-aspect-ratio", ratioToUse);
+  });
 }
 
 function youtubeEmbedMarkup(project, title) {
@@ -136,41 +151,51 @@ function renderMedia(path, alt, className = "media-thumb") {
     const href = escapeAttr(path);
     return `<video class="${className}" src="${href}" autoplay loop muted playsinline preload="metadata" onerror="${videoOnErrorHandler(path)}"></video>`;
   }
-  // Image case – click opens lightbox
   const href = escapeAttr(path);
   const safeAlt = escapeAttr(alt);
-  return `<img class="${className}" src="${href}" alt="${safeAlt}" loading="lazy" onclick="openLightbox('${href}', '${safeAlt}')" style="cursor:pointer;" />`;
+  return `<img class="${className}" src="${href}" alt="${safeAlt}" loading="lazy" />`;
 }
 
 // Lightbox helper functions
 function ensureLightbox() {
-  if (document.getElementById('lightbox')) return;
-  const lightbox = document.createElement('div');
-  lightbox.id = 'lightbox';
-  lightbox.className = 'lightbox hidden';
+  if (document.getElementById("lightbox")) return;
+  const lightbox = document.createElement("div");
+  lightbox.id = "lightbox";
+  lightbox.className = "lightbox";
   lightbox.innerHTML = `
     <div class="lightbox-content">
       <button class="lightbox-close" aria-label="Close">✕</button>
       <img class="lightbox-img" src="" alt="" />
     </div>`;
   document.body.appendChild(lightbox);
-  const closeBtn = lightbox.querySelector('.lightbox-close');
-  closeBtn.addEventListener('click', closeLightbox);
-  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  const closeBtn = lightbox.querySelector(".lightbox-close");
+  closeBtn.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeLightbox();
+    }
+  });
 }
 function openLightbox(src, alt) {
-  const lightbox = document.getElementById('lightbox');
-  const img = lightbox.querySelector('.lightbox-img');
+  ensureLightbox();
+  const lightbox = document.getElementById("lightbox");
+  if (!lightbox) return;
+  const img = lightbox.querySelector(".lightbox-img");
+  if (!img) return;
   img.src = src;
-  img.alt = alt || '';
-  lightbox.classList.add('visible');
+  img.alt = alt || "";
+  lightbox.classList.add("visible");
 }
 function closeLightbox() {
-  const lightbox = document.getElementById('lightbox');
-  lightbox.classList.remove('visible');
+  const lightbox = document.getElementById("lightbox");
+  if (!lightbox) return;
+  lightbox.classList.remove("visible");
 }
-
-document.addEventListener('DOMContentLoaded', ensureLightbox);
 
 function projectCard(project) {
   const preview = choosePreview(project);
@@ -337,11 +362,16 @@ function renderProjectPage(data) {
   }
 
   const { primaryMarkup, usedLocalVideo } = projectPrimaryMediaMarkup(project, `${safeText(project.title)} video`);
+  const mediaPaths = Array.isArray(project?.assets?.media) ? project.assets.media : [];
+  const localVideoCount = mediaPaths.filter((path) => isVideo(path)).length;
+  const isImageOnlyProject = mediaPaths.length > 0 && localVideoCount === 0;
+  const renderAllVideosInGallery = localVideoCount > 1;
+  const primarySectionMarkup = renderAllVideosInGallery ? "" : primaryMarkup;
   let skippedPrimaryVideo = false;
 
-  const media = (project.assets.media || [])
+  const media = mediaPaths
     .filter((path) => {
-      if (usedLocalVideo && !skippedPrimaryVideo && path === usedLocalVideo) {
+      if (!renderAllVideosInGallery && usedLocalVideo && !skippedPrimaryVideo && path === usedLocalVideo) {
         skippedPrimaryVideo = true;
         return false;
       }
@@ -350,9 +380,12 @@ function renderProjectPage(data) {
     .map((path) => {
     if (isVideo(path)) {
       const href = escapeAttr(path);
-      return `<video controls playsinline preload="metadata" src="${href}" onloadedmetadata="setVideoWrapAspectRatio(this)" onerror="${videoOnErrorHandler(path)}"></video>`;
+      return `<div class="video-wrap"><video controls playsinline preload="metadata" src="${href}" onloadedmetadata="setVideoWrapAspectRatio(this)" onerror="${videoOnErrorHandler(path)}"></video></div>`;
     }
-    return `<img src="${escapeAttr(path)}" alt="${escapeAttr(safeText(project.title))} media" loading="lazy" />`;
+    const imageClass = isImageOnlyProject ? "project-lightbox-trigger" : "";
+    const safePath = escapeAttr(path);
+    const safeAlt = escapeAttr(`${safeText(project.title)} media`);
+    return `<img class="${imageClass}" src="${safePath}" alt="${safeAlt}" loading="lazy" />`;
   });
 
   container.innerHTML = `
@@ -360,10 +393,27 @@ function renderProjectPage(data) {
       <h1>${safeText(project.title)}</h1>
       <p class="detail-description">${safeText(project.description)}</p>
       ${buildTagList(project.tags)}
-      ${primaryMarkup}
+      ${primarySectionMarkup}
       ${media.length ? `<section class="detail-gallery">${media.join("")}</section>` : ""}
     </article>
   `;
+
+  if (!isImageOnlyProject) return;
+
+  ensureLightbox();
+  container.querySelectorAll(".project-lightbox-trigger").forEach((image) => {
+    image.addEventListener("click", () => {
+      openLightbox(image.getAttribute("src") || "", image.getAttribute("alt") || "");
+    });
+    image.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openLightbox(image.getAttribute("src") || "", image.getAttribute("alt") || "");
+      }
+    });
+    image.setAttribute("role", "button");
+    image.setAttribute("tabindex", "0");
+  });
 }
 
 function runRevealAnimation() {

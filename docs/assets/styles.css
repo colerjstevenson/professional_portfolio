@@ -551,11 +551,24 @@ body[data-page="project"] .detail-gallery video {
 }
 
 .detail-gallery img,
-.detail-gallery video {
+.detail-gallery .video-wrap {
   width: 100%;
   border-radius: 12px;
   border: 1px solid var(--border);
   background: #d8d2c8;
+}
+
+.detail-gallery .video-wrap {
+  margin-top: 0;
+}
+
+.detail-gallery img.project-lightbox-trigger {
+  cursor: zoom-in;
+}
+
+.detail-gallery img.project-lightbox-trigger:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .empty-state {

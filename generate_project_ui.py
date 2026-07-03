@@ -160,8 +160,9 @@ def submit_callback(sender, app_data, user_data):
     dpg.set_value("main_media_paths", "")
 
 def set_featured_true_for_all_projects():
-    """Ensure every existing project's metadata includes "featured": true.
+    """Ensure every existing project's metadata includes "featured".
     This is run after each project creation to back‑fill the field for older entries.
+    Only sets featured to true if the key is missing, preserving user choices.
     """
     for proj_dir in PROJECTS_ROOT.iterdir():
         if proj_dir.is_dir():
@@ -172,9 +173,10 @@ def set_featured_true_for_all_projects():
                         data = json.load(f)
                 except Exception:
                     continue
-                data["featured"] = True
-                with open(meta_path, "w", encoding="utf-8") as f:
-                    json.dump(data, f, indent=2)
+                if "featured" not in data:
+                    data["featured"] = True
+                    with open(meta_path, "w", encoding="utf-8") as f:
+                        json.dump(data, f, indent=2)
 
 def open_file_dialog(target_tag: str, multi: bool = False):
     """Open the OS file chooser and set the selected path(s) into the given DearPyGui input.
