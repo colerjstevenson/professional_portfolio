@@ -1,4 +1,31 @@
 const DATA_URL = "data/projects.json";
+const CLAY_TEXTURE_PATH = "./assets/clay_animation/clay0001.png";
+const CLAY_TEXTURE_HOVER_PATH = "./assets/clay_animation/clay_animation_10fps.webp";
+const CARD_BACKGROUND_GRADIENT = "linear-gradient(rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.24))";
+
+function enhanceCardClayAnimation() {
+  const cards = document.querySelectorAll(".project-card, .film-card");
+  if (!cards.length) return;
+
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const applyTexture = (card, path) => {
+    card.style.backgroundImage = `${CARD_BACKGROUND_GRADIENT}, url("${path}")`;
+    card.style.backgroundRepeat = "repeat";
+    card.style.backgroundSize = "420px 420px";
+    card.style.backgroundBlendMode = "normal, normal";
+  };
+
+  cards.forEach((card) => {
+    applyTexture(card, CLAY_TEXTURE_PATH);
+    if (prefersReducedMotion) return;
+
+    card.addEventListener("mouseenter", () => applyTexture(card, CLAY_TEXTURE_HOVER_PATH));
+    card.addEventListener("mouseleave", () => applyTexture(card, CLAY_TEXTURE_PATH));
+    card.addEventListener("focusin", () => applyTexture(card, CLAY_TEXTURE_HOVER_PATH));
+    card.addEventListener("focusout", () => applyTexture(card, CLAY_TEXTURE_PATH));
+  });
+}
 
 function getQueryParam(name) {
   const url = new URL(window.location.href);
@@ -109,8 +136,41 @@ function renderMedia(path, alt, className = "media-thumb") {
     const href = escapeAttr(path);
     return `<video class="${className}" src="${href}" autoplay loop muted playsinline preload="metadata" onerror="${videoOnErrorHandler(path)}"></video>`;
   }
-  return `<img class="${className}" src="${escapeAttr(path)}" alt="${escapeAttr(alt)}" loading="lazy" />`;
+  // Image case – click opens lightbox
+  const href = escapeAttr(path);
+  const safeAlt = escapeAttr(alt);
+  return `<img class="${className}" src="${href}" alt="${safeAlt}" loading="lazy" onclick="openLightbox('${href}', '${safeAlt}')" style="cursor:pointer;" />`;
 }
+
+// Lightbox helper functions
+function ensureLightbox() {
+  if (document.getElementById('lightbox')) return;
+  const lightbox = document.createElement('div');
+  lightbox.id = 'lightbox';
+  lightbox.className = 'lightbox hidden';
+  lightbox.innerHTML = `
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close">✕</button>
+      <img class="lightbox-img" src="" alt="" />
+    </div>`;
+  document.body.appendChild(lightbox);
+  const closeBtn = lightbox.querySelector('.lightbox-close');
+  closeBtn.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+}
+function openLightbox(src, alt) {
+  const lightbox = document.getElementById('lightbox');
+  const img = lightbox.querySelector('.lightbox-img');
+  img.src = src;
+  img.alt = alt || '';
+  lightbox.classList.add('visible');
+}
+function closeLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  lightbox.classList.remove('visible');
+}
+
+document.addEventListener('DOMContentLoaded', ensureLightbox);
 
 function projectCard(project) {
   const preview = choosePreview(project);
@@ -333,6 +393,7 @@ async function main() {
       renderProjectPage(data);
     }
 
+    enhanceCardClayAnimation();
     runRevealAnimation();
   } catch (error) {
     const root = document.querySelector("main");
