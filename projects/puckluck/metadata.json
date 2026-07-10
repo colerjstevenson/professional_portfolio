@@ -1,0 +1,19 @@
+{
+  "title": "PuckLuck",
+  "description": "",
+  "type": "coding",
+  "tags": [
+    "game",
+    "javascript",
+    "python",
+    "data",
+    "NHL API"
+  ],
+  "youtube": "",
+  "git": "https://colerjstevenson.github.io/PuckLuck/",
+  "thumbnail": "thumb.png",
+  "poster": null,
+  "media": [],
+  "preview_webp": null,
+  "featured": true
+}

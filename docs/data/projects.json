@@ -461,6 +461,32 @@
       }
     },
     {
+      "slug": "puckluck",
+      "type": "coding",
+      "title": "PuckLuck",
+      "description": "",
+      "tags": [
+        "game",
+        "javascript",
+        "python",
+        "data",
+        "NHL API"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": "https://colerjstevenson.github.io/PuckLuck/"
+      },
+      "assets": {
+        "base": "project-assets/puckluck",
+        "thumbnail": "project-assets/puckluck/assets/thumb.png",
+        "poster": "",
+        "preview": "",
+        "media": []
+      }
+    },
+    {
       "slug": "rps-battle",
       "type": "coding",
       "title": "RPS Battle",
