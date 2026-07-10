@@ -1,6 +1,6 @@
 {
   "title": "PuckLuck",
-  "description": "",
+  "description": "A Web game that pulls nhl historical player data from an API and uses it to let you draft teams based on random categories",
   "type": "coding",
   "tags": [
     "game",
