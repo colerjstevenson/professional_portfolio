@@ -237,7 +237,7 @@
       "title": "Horse Breeding Simulator",
       "description": "A tycoon game where you take control of a horse breeding farm!",
       "tags": [],
-      "featured": true,
+      "featured": false,
       "links": {
         "youtube": "",
         "youtubeEmbed": "",
