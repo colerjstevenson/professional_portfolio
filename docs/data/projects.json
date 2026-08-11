@@ -511,6 +511,31 @@
       }
     },
     {
+      "slug": "rps-predictor",
+      "type": "coding",
+      "title": "RPS Predictor",
+      "description": "A Web app that uses a small sample regression and Markov Model to suggest the next best move in RPS",
+      "tags": [
+        "coding",
+        "rps",
+        "website",
+        "js"
+      ],
+      "featured": false,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": "https://colerjstevenson.github.io/RPS_Helper/"
+      },
+      "assets": {
+        "base": "project-assets/rps-predictor",
+        "thumbnail": "project-assets/rps-predictor/assets/thumb.PNG",
+        "poster": "",
+        "preview": "",
+        "media": []
+      }
+    },
+    {
       "slug": "sign-language",
       "type": "film",
       "title": "Sign Language",

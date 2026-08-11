@@ -1,0 +1,18 @@
+{
+  "title": "RPS Predictor",
+  "description": "A Web app that uses a small sample regression and Markov Model to suggest the next best move in RPS",
+  "type": "coding",
+  "tags": [
+    "coding",
+    "rps",
+    "website",
+    "js"
+  ],
+  "youtube": "",
+  "git": "https://colerjstevenson.github.io/RPS_Helper/",
+  "thumbnail": "thumb.PNG",
+  "poster": null,
+  "media": [],
+  "preview_webp": null,
+  "featured": false
+}
