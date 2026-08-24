@@ -1,0 +1,17 @@
+{
+  "title": "Golf RPG",
+  "description": "A WIP game about land use and golf courses that doubles as a survey",
+  "type": "coding",
+  "tags": [
+    "game",
+    "web",
+    "golf"
+  ],
+  "youtube": "",
+  "git": "https://colerjstevenson.github.io/GolfRPG/",
+  "thumbnail": "thumb.PNG",
+  "poster": null,
+  "media": [],
+  "preview_webp": null,
+  "featured": true
+}

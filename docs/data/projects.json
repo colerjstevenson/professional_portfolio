@@ -232,12 +232,36 @@
       }
     },
     {
+      "slug": "golf-rpg",
+      "type": "coding",
+      "title": "Golf RPG",
+      "description": "A WIP game about land use and golf courses that doubles as a survey",
+      "tags": [
+        "game",
+        "web",
+        "golf"
+      ],
+      "featured": true,
+      "links": {
+        "youtube": "",
+        "youtubeEmbed": "",
+        "git": "https://colerjstevenson.github.io/GolfRPG/"
+      },
+      "assets": {
+        "base": "project-assets/golf-rpg",
+        "thumbnail": "project-assets/golf-rpg/assets/thumb.PNG",
+        "poster": "",
+        "preview": "",
+        "media": []
+      }
+    },
+    {
       "slug": "horse-breeding-simulator",
       "type": "coding",
       "title": "Horse Breeding Simulator",
       "description": "A tycoon game where you take control of a horse breeding farm!",
       "tags": [],
-      "featured": false,
+      "featured": true,
       "links": {
         "youtube": "",
         "youtubeEmbed": "",
